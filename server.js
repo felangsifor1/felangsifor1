@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-const dataFile = path.join(__dirname, 'data', 'index.json');
+const dataFile = path.join(__dirname, 'data', 'notebook.json');
 
 // 获取所有节点
 app.get('/nodes', async (req, res) => {

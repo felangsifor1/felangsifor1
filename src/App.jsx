@@ -5,6 +5,7 @@ import Users from './pages/Users';
 import Settings from './pages/Settings';
 import Notebook from "./pages/Notebook.jsx";
 import 'antd/dist/reset.css';
+import Matrixdoc from "./pages/Matrixdoc.jsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/users" element={<Users />} />
                     <Route path="/settings" element={<Settings />} />
                     <Route path="/notebook" element={<Notebook />} />
+                    <Route path="/matrixdoc" element={<Matrixdoc />} />
                 </Route>
             </Routes>
         </BrowserRouter>

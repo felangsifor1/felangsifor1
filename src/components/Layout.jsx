@@ -1,5 +1,12 @@
 import { Layout, Menu } from 'antd';
-import { HomeOutlined, UserOutlined, SettingOutlined, DotChartOutlined, BookOutlined } from '@ant-design/icons';
+import {
+    HomeOutlined,
+    UserOutlined,
+    SettingOutlined,
+    DotChartOutlined,
+    BookOutlined,
+    BorderOuterOutlined
+} from '@ant-design/icons';
 import { useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
@@ -15,6 +22,7 @@ const AdminLayout = () => {
         { key: '2', icon: <UserOutlined />, label: 'Users', path: '/users' },
         { key: '3', icon: <SettingOutlined />, label: 'Settings', path: '/settings' },
         { key: '4', icon: <BookOutlined />, label: 'Notebook',path: '/notebook' },
+        { key: '5', icon: <BorderOuterOutlined />, label: 'Matrixdoc',path: '/matrixdoc' },
     ];
 
     const selectedKey = menuItems.find((item) => item.path === location.pathname)?.key || '1';
